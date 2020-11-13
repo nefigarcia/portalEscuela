@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class PortalEscuelaApplicationTests {
 
 	@Test
-	 contextLoads() {
+	void contextLoads() {
 		AuthenticationController auth=new AuthenticationController();
 		String res=auth.ini();
 		assertEquals(res, "actual, message");
